@@ -1,0 +1,2 @@
+rootProject.name = "RosmeryFinal"
+include ':app'

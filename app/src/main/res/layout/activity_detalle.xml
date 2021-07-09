@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalleActivity">
+    <ImageView
+        android:id="@+id/imagenPokemon"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/nombreP"
+        android:layout_width="match_parent"
+        android:layout_height= "50dp"
+        android:gravity="center_horizontal"
+        android:text="Nombre"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/goP"
+        app:layout_constraintTop_toBottomOf="@+id/imagenPokemon"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tipoP"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Tipo"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/goP"
+        app:layout_constraintTop_toBottomOf="@+id/nombreP"
+        tools:ignore="MissingConstraints"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/goP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UBICACION"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
